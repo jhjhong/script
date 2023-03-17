@@ -21,6 +21,7 @@ for record in SeqIO.parse(sys.argv[1], "fasta"):
     if all(base in valid_aa for base in record.seq):
         # 如果是，將該序列添加到新的序列列表中
         sequences.append(record)
+        print(record.id + '\t' + record.seq)
 
 # 將新的序列列表寫回到FASTA文件中
 SeqIO.write(sequences, "output.fasta", "fasta")
