@@ -2,7 +2,9 @@
 - calengc
 
 簡單統計contigs數量、gc、len等資訊
-`perl calengc.pl <inputfile>`
+```console
+$ perl calengc.pl <inputfile>
+```
 
 - checkm_sum
 
